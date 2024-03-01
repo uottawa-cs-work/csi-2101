@@ -1,0 +1,54 @@
+class Pair {
+  String key;
+  int value;
+}
+
+class Pixel {
+  int red;
+  int green;
+  int blue;
+  
+  public int[] getRGB() {}
+}
+
+class ColorImage {
+  * -> * Pixel;
+  
+  int height;
+  int width;
+  int depth;
+  
+  int MAX_DEPTH;
+  
+  public int[] getPixel(int i, int j) {}
+  
+  public void reduceColors(int d) {}
+  
+  private void initializeImage() {}
+}
+
+class ColorHistogram {
+  * -> * ColorImage;
+  
+  int depth;
+  int numBins;
+  double[] histogram;
+  
+  public void setImage(ColorImage image) {}
+  
+  public 
+  
+  private void parseHistogramFile(BufferedReader reader) {}
+  
+  private void computeHistogram() {}
+  
+  private void normalizeHistogram() {}
+  
+  public void save(String filename) {}
+}
+
+class SimilaritySearch {
+  * -> * ColorHistogram;
+  * -> * Pair;
+  public static void main(String[] args) {}
+}
